@@ -91,10 +91,10 @@ Version: {__version__}
                     clone_url = repo.ssh_url
                 if args.shallow:
                     print(u'Shallow cloning "{repo.full_name}"'.format(repo=repo))
-                    call([u'git', u'clone', '--depth=1', clone_url, join(repo.name)])
+                    call([u'git', u'clone', '--depth=1', clone_url, join(repo.name+'.git')])
                 else:
                     print(u'Cloning "{repo.full_name}"'.format(repo=repo))
-                    call([u'git', u'clone', clone_url, join(repo.name)])
+                    call([u'git', u'clone', '--mirror', clone_url, join(repo.name+'.git')])
             elif not args.nopull:
                 print(u'Updating "{repo.name}"'.format(repo=repo))
                 call([u'git', u'pull'], env=dict(environ, GIT_DIR=join(repo.name, '.git').encode('utf8')))
