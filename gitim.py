@@ -97,7 +97,7 @@ Version: {__version__}
                     call([u'git', u'clone', '--depth=1', clone_url, join(repo.name+'.git')])
                 else:
                     print(u'Cloning "{repo.full_name}"'.format(repo=repo))
-                    call([u'git', u'clone', '--mirror', clone_url, join(repo.name+'.git')])
+                    call([u'git', u'clone', '--bare', clone_url, join(repo.name+'.git')])
             elif not args.nopull:
                 print(u'Updating "{repo.name}"'.format(repo=repo))
                 call([u'git', u'pull'], env=dict(environ, GIT_DIR=join(repo.name, '.git').encode('utf8')))
