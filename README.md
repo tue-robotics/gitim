@@ -22,7 +22,7 @@ Clone all your Github repositories.
 ## Installation
 
 ```
-pip3 install . 
+pip3 install .
 ```
 or
 ```
@@ -72,6 +72,6 @@ MIT
 [License]: https://github.com/muhasturk/gitim/blob/master/LICENSE "MIT License"
 
 [Python Image]: https://img.shields.io/badge/python-3.5-blue.svg "Python Version: 3.5"
-[Python]: https://docs.python.org/3.5/whatsnew/changelog.html#python-3-5-0-final "Python 3.5 Changelog" 
+[Python]: https://docs.python.org/3.5/whatsnew/changelog.html#python-3-5-0-final "Python 3.5 Changelog"
 
 [Project Status Image]: https://img.shields.io/badge/project-active-green.svg "Project Status: Active"
